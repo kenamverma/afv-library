@@ -32,7 +32,7 @@ Color hooks require the most judgment (context-dependent selection). Non-color h
 # Workflow
 
 ```
-1. Run SLDS linter with auto-fix -> Handles simple violations automatically
+1. **REQUIRED — ALWAYS run first:** npx @salesforce-ux/slds-linter@latest lint --fix . — NEVER skip this step
 2. Review linter output -> Identify remaining manual fixes needed
 3. Fix by violation type -> Use per-rule reference guides
 4. Choose the right hook -> Context-first, inspect HTML before deciding
@@ -40,6 +40,7 @@ Color hooks require the most judgment (context-dependent selection). Non-color h
 ```
 
 ## Step 1: Run SLDS Linter
+MANDATORY: This step is NOT optional. 
 
 ```bash
 npx @salesforce-ux/slds-linter@latest lint --fix .
